@@ -1,0 +1,4 @@
+Calculates 3 digit number that is 32 less than a square 3 digit and 
+13 more than another square 3 digit. 
+Code assumes squares are adjacent (which they are for 3 digit numbers)
+

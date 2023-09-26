@@ -1,0 +1,9 @@
+#include "wordcount.hh"
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+// these are the implementations of what is inside of the header.
+// Here you actually make the functions you use in the main.

@@ -1,0 +1,3 @@
+Prints out binary value of signed integer as well as 
+numerical value of set bits
+

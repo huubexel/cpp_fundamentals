@@ -1,0 +1,4 @@
+Print out all combinations of arguments, 
+by reading out all binary values between 0 and number of arguments 
+(not including a.out)
+
