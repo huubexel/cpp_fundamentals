@@ -3,7 +3,7 @@
 string const inputToString()
 {
     string line;
-    string allLines;
+    string allLines; 
 
     while (getline(cin, line))
         allLines += line;
