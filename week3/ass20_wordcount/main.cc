@@ -3,5 +3,6 @@
 int main(int argc, char **argv)
 {
     string input = inputToString();
-    cout << input << '\n';
+    char argument = getArgument(argc, argv);
+    cout << getCountRequested(input, argument) << '\n';
 }

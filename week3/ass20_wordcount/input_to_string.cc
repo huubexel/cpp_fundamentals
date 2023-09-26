@@ -2,10 +2,9 @@
 
 string const inputToString()
 {
-    string line;
-    string allLines; 
+    string line, allLines;
 
     while (getline(cin, line))
-        allLines += line;
+        allLines += line + '\n';
     return allLines;
 }
