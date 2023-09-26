@@ -1,4 +1,4 @@
-#include "wordcount.ih"
+#include "main.ih"
 
 char const getArgument(int argc, char **argv)
 {

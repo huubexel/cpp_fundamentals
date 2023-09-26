@@ -1,4 +1,4 @@
-#include "wordcount.ih"
+#include "main.ih"
 
 string const inputToString()
 {
