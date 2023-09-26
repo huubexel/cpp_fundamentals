@@ -2,7 +2,7 @@
 
 using namespace std;
 
-double sum(int const &argc, char **argv, double &&startingValue)
+double sum(int const &argc, char **argv, double const &&startingValue)
 {
     double total = startingValue;
     for (int idx = 1; idx != argc; ++idx)
