@@ -1,11 +1,9 @@
 #include "../../main.ih"
 
-using namespace std;
-
 double sum(int const &argc, char **argv, double const &&startingValue)
 {
-    double total = startingValue;
-    for (int idx = 1; idx != argc; ++idx)
-        total += stod(argv[idx]);
-    return total;
+    double total = startingValue;         // Put the startingValue in total
+    for (int idx = 1; idx != argc; ++idx) // For each argument that is given,
+        total += stod(argv[idx]);         // add the argument to the total
+    return total;                         // return the total (double)
 }
