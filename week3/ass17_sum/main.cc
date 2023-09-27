@@ -1,9 +1,4 @@
-#include <iostream>
-#include <string>
-#include "sum_int.cc"
-#include "sum_double.cc"
-
-using namespace std;
+#include "main.ih"
 
 int main(int argc, char **argv)
 {
