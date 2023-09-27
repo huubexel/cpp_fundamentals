@@ -1,4 +1,4 @@
-#include "main.ih"
+#include "../main.ih"
 
 size_t const getCountRequested(string input, char argument)
 {
