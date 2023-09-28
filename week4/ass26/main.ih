@@ -1,4 +1,4 @@
-#include "person.hh"
+#include "person/person.hh"
 
 #include <string>
 #include <iostream>

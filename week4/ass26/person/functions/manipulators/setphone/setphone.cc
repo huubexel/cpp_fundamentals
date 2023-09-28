@@ -1,3 +1,5 @@
+#include "../../../../main.ih"
+
 void Person::setPhone(string const &phone)
 {
     if (phone.empty())
