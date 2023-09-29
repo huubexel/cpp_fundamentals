@@ -17,14 +17,14 @@ class Person
             std::string const &address,
             std::string const &phone,
             size_t mass);
-            
+
         // accessors
         std::string const &name()    const;
         std::string const &address() const;
         std::string const &phone()   const;
         size_t mass()                const;
 
-        // manipulators    
+        // manipulators
         void setName(std::string const &name);
         void setAddress(std::string const &address);
         void setPhone(std::string const &phone);
@@ -36,6 +36,7 @@ class Person
 
         // other
         void insert(std::ostream &out);
+        void extract(std::istream &in);
 };
 
 #endif

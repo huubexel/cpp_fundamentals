@@ -1,6 +1,6 @@
-// #include "../../../main/internal_header/main.ih"
+#include "../../../main/internal_header/main.ih"
 
-// void Person::extract(istream &in)
-// {
+void Person::extract(istream &in)
+{
 
-// }
+}
