@@ -2,7 +2,7 @@
 
 void Person::insert(ostream &out)
 {
-    out << "name: " << Person::name() << ", address: " << Person::address()
+    out << "name: " << Per  son::name() << ", address: " << Person::address()
         << ", phone: " << Person::phone() << ", mass: " << Person::mass()
-        << '\n';
-}
+        << '\n';                  // Insert the Persons' information in the
+}                                 // out (ostream) given
