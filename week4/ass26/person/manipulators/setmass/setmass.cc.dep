@@ -1,0 +1,4 @@
+person/manipulators/setmass/setmass.o: \
+ person/manipulators/setmass/setmass.cc main.ih person/person.hh
+main.ih:
+person/person.hh:

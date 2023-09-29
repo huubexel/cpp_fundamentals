@@ -1,0 +1,4 @@
+person/accessors/mass/mass.o: person/accessors/mass/mass.cc main.ih \
+ person/person.hh
+main.ih:
+person/person.hh:
