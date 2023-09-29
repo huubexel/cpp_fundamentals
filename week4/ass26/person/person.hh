@@ -5,10 +5,10 @@
 
 class Person
 {
-    std::string d_name;         // name of person
-    std::string d_address;      // address field
-    std::string d_phone;        // telephone number
-    size_t      d_mass;         // the mass in kg.
+    std::string d_name;         // Name of person
+    std::string d_address;      // Address field
+    std::string d_phone;        // Telephone number
+    size_t      d_mass;         // The mass in kg
 
     public:
         // constructors
