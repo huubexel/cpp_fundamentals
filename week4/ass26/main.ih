@@ -1,6 +1,0 @@
-#include "person/person.hh"
-
-#include <string>
-#include <iostream>
-
-using namespace std;

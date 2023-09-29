@@ -1,4 +1,4 @@
-#include "../../../main.ih"
+#include "../../../main/internal_header/main.ih"
 
 string const &Person::address() const
 {                            // Return this persons' address

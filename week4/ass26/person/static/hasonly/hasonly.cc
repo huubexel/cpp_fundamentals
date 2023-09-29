@@ -1,4 +1,4 @@
-#include "../../../main.ih"
+#include "../../../main/internal_header/main.ih"
 
 bool const Person::hasOnly(string const &&charsAllowed,
                            string const &stringToCheck)
