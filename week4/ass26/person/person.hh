@@ -1,6 +1,7 @@
 #ifndef INCLUDED_PERSON_
 #define INCLUDED_PERSON_
 
+
 #include <string> // for some reason it doesn't work with iosfwd, ask in class.
 
 class Person
