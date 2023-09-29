@@ -1,4 +1,0 @@
-person/other/insert/insert.o: person/other/insert/insert.cc main.ih \
- person/person.hh
-main.ih:
-person/person.hh:

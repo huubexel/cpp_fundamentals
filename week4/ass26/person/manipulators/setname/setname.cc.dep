@@ -1,4 +1,0 @@
-person/manipulators/setname/setname.o: \
- person/manipulators/setname/setname.cc main.ih person/person.hh
-main.ih:
-person/person.hh:

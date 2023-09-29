@@ -1,4 +1,0 @@
-person/accessors/name/name.o: person/accessors/name/name.cc main.ih \
- person/person.hh
-main.ih:
-person/person.hh:

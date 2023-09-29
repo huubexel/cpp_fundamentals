@@ -1,4 +1,0 @@
-person/other/hasonly/hasonly.o: person/other/hasonly/hasonly.cc main.ih \
- person/person.hh
-main.ih:
-person/person.hh:

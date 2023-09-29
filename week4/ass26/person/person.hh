@@ -1,7 +1,7 @@
 #ifndef INCLUDED_PERSON_
 #define INCLUDED_PERSON_
 
-#include <iosfwd>
+#include <string> // for some reason it doesn't work with iosfwd, ask in class.
 
 class Person
 {
@@ -12,7 +12,7 @@ class Person
 
     public:
         // constructors
-        Person::Person(
+        Person(
             std::string const &name,
             std::string const &address,
             std::string const &phone,
@@ -30,7 +30,11 @@ class Person
         void setPhone(std::string const &phone);
         void setMass(size_t mass);
 
-        // other member functions
+        // static
+        static bool const hasOnly(std::string const charsAllowed,
+                                  std::string const &stringToCheck);
+
+        // other
         void insert(std::ostream &out);
 };
 

@@ -1,4 +1,0 @@
-person/other/extract/extract.o: person/other/extract/extract.cc main.ih \
- person/person.hh
-main.ih:
-person/person.hh:

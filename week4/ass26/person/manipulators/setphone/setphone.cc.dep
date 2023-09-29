@@ -1,4 +1,0 @@
-person/manipulators/setphone/setphone.o: \
- person/manipulators/setphone/setphone.cc main.ih person/person.hh
-main.ih:
-person/person.hh:

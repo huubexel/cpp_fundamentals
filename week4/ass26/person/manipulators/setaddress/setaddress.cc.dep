@@ -1,4 +1,0 @@
-person/manipulators/setaddress/setaddress.o: \
- person/manipulators/setaddress/setaddress.cc main.ih person/person.hh
-main.ih:
-person/person.hh:

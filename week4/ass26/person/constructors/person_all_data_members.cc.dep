@@ -1,4 +1,0 @@
-person/constructors/person_all_data_members.o: \
- person/constructors/person_all_data_members.cc main.ih person/person.hh
-main.ih:
-person/person.hh:
