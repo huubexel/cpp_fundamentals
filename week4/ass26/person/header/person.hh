@@ -29,6 +29,8 @@ class Person
         void setAddress(std::string const &address);
         void setPhone(std::string const &phone);
         void setMass(size_t mass);
+        
+        void setDataMember(std::string &&data, size_t counter);
 
         // static
         static bool const hasOnly(std::string const &&charsAllowed,
