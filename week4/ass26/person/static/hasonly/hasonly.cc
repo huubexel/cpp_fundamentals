@@ -1,6 +1,6 @@
 #include "../../../main.ih"
 
-static bool const hasOnly(string const charsAllowed, string const &stringToCheck)
+bool const Person::hasOnly(string const &&charsAllowed, string const &stringToCheck)
 {
     for (char charToCheck: stringToCheck)
     {

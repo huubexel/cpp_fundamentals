@@ -31,7 +31,7 @@ class Person
         void setMass(size_t mass);
 
         // static
-        static bool const hasOnly(std::string const charsAllowed,
+        static bool const hasOnly(std::string const &&charsAllowed,
                                   std::string const &stringToCheck);
 
         // other
