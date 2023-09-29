@@ -2,5 +2,7 @@
 
 void Person::insert(ostream &out)
 {
-    out << Person::name() << " weighs " << Person::mass() << " kg.\n";
+    out << "name: " << Person::name() << ", address: " << Person::address()
+        << ", phone: " << Person::phone() << ", mass: " << Person::mass()
+        << '\n';
 }

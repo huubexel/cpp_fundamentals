@@ -8,4 +8,5 @@ int main()
     cout << jurjen.phone() << '\n';
     jurjen.setPhone("0612435465");
     cout << jurjen.phone() << '\n';
+    jurjen.insert(cout);
 }
