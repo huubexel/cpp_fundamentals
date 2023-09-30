@@ -1,9 +1,9 @@
 #include "../../../main/internal_header/main.ih"
 
 void Person::setDataMember(string &&data, size_t counter)
-{
-    switch (counter)
-    {
+{                                 // According to the counter, set a
+    switch (counter)                // datamember everytime this function is
+    {                               // called
         case 0:
             setName(data);
         break;
@@ -16,8 +16,8 @@ void Person::setDataMember(string &&data, size_t counter)
             setPhone(data);
         break;
 
-        case 3:
-            setMass(stoull(data));
-        break;
+        case 3:                     // For case 3 (mass) stoull has to be
+            setMass(stoull(data));  // used to be able to convert the string
+        break;                      // to a size_t
     }
 }
