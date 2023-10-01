@@ -12,6 +12,10 @@ class Person
 
     public:
         // constructors
+        Person()                  // delegating constructor that sets
+        :                         // everything to to an empty string or 0
+            Person("", "", "", 0)
+        {}
         Person(
             std::string const &name,
             std::string const &address,
