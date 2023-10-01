@@ -6,10 +6,13 @@
 
 class Line
 {
+    std::string line;
+
     public:
-        Line() = default;
+        Line() = default;  // check whether this automatically makes the line or not.
+        Line(std::string line);
         bool getLine(std::istream &in);
-        std::string next();
+        std::string next(string &line, size_t beginPosition);
 };
 
 #endif

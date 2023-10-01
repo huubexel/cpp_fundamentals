@@ -2,7 +2,12 @@
 
 int main()
 {
-    Line l;
-    bool trueOrFalse = l.getLine(cin);
+    Line lineObject;
+
+    string line;
+    getline(in, line);
+
+    lineObject.next(line)
+
     cout << trueOrFalse << '\n';
 }
