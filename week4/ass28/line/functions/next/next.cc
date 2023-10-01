@@ -8,11 +8,6 @@
 
 string next()
 {
-   getline()
-
-    Recursion op zichzelf
-
-    getline aanroepen,
 
     als true dan ga de zin splitten en print het woord
 

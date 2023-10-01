@@ -2,12 +2,12 @@
 
 bool Line::getLine()
 {
-    getline(cin, d_line);
-    for (char character: d_line)
-    {
-        if (isspace(character))
-            return true;
-    }
+    getline(cin, d_line);         // Get line from stdin
+    for (char character: d_line)  // For every character in that line
+    {                             
+        if (!isspace(character))  // Check if the character is a non
+            return true;          // whitespace character, if there is at
+    }                             // least one non-ws characters, return true
 
-    return false;
+    return false;                 // if not, return false
 }
