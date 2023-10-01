@@ -1,8 +1,8 @@
 #include "../../internal_header/line.ih"
 
-bool Line::getLine()
+bool Line::getLine(istream &in)
 {
-    getline(cin, d_line);
+    getline(in, d_line);
     for (char character: d_line)
     {
         if (isspace(character))

@@ -1,7 +1,7 @@
 #ifndef INCLUDED_LINE_
 #define INCLUDED_LINE_
 
-#include <iosfwd>
+#include <iostream>
 #include <string>
 
 class Line
@@ -9,9 +9,12 @@ class Line
     std::string d_line;
 
     public:
-        Line() = default;  // check whether this automatically makes the line or not.
+        // Constructors
+        Line() = default;
         Line(std::string line);
-        bool getLine();
+
+        // Other functions
+        bool getLine(std::istream &in = std::cin);
         //std::string next(string &line, size_t beginPosition);
 };
 

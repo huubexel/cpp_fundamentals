@@ -2,6 +2,4 @@
 
 int main()
 {
-    Line l;
-    l.getLine();
 }
