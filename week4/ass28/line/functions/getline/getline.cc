@@ -2,8 +2,8 @@
 
 bool Line::getLine()
 {
-    string line;
-    for (char character: line)
+    getline(cin, d_line);
+    for (char character: d_line)
     {
         if (isspace(character))
             return true;

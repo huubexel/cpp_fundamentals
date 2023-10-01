@@ -2,12 +2,6 @@
 
 int main()
 {
-    Line lineObject;
-
-    string line;
-    getline(in, line);
-
-    lineObject.next(line)
-
-    cout << trueOrFalse << '\n';
+    Line l;
+    l.getLine();
 }

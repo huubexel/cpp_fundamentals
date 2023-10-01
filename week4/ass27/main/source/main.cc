@@ -2,5 +2,5 @@
 
 int main()
 {
-    Person personArray[5] = {Person{}, Person{}, Person{}, Person{}, Person{}};
+    Person personArray[5] = { Person{}, Person{}, Person{}, Person{}, Person{} };
 }
