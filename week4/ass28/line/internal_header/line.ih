@@ -1,6 +1,7 @@
 #include "../public_header/line.hh"
 
 #include <iostream>
+#include <cctype>
 // string is already included in line.hh
 
 using namespace std;

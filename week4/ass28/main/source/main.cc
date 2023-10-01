@@ -3,5 +3,6 @@
 int main()
 {
     Line l;
-    l.getLine(cin);
+    bool trueOrFalse = l.getLine(cin);
+    cout << trueOrFalse << '\n';
 }
