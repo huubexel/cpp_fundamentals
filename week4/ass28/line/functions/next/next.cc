@@ -1,15 +1,22 @@
+#include "../..//internal_header/line.ih"
+
 // a member std::string next() returning the next substring from the line retrieved by getLine()
 // consisting of non-ws characters, and an empty string if no such substring is available anymore.
 
-//string next(string &line, size_t beginPosition = 0)
-//{
- //   getline()
+// make sure that at every call of next() the begin position of the next substring is already known, 
+//and that his begin position is equal to string::npos if there are no more substrings.
 
-    // Recursion op zichzelf
+string next()
+{
+   getline()
 
-    // getline aanroepen,
+    Recursion op zichzelf
 
-    // als true dan ga de zin splitten en print het woord
+    getline aanroepen,
 
-    // als false print het woord.
-//}
+    als true dan ga de zin splitten en print het woord
+
+    als false print het woord.
+}
+
+// this returns only the next substring

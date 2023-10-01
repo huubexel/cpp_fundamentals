@@ -2,4 +2,7 @@
 
 int main()
 {
+    Line line;
+    line.getLine(cin);
+    line.next();
 }
