@@ -1,0 +1,6 @@
+#include "../public_header/person.hh"
+
+#include <iostream>
+// string is already included in person.hh
+
+using namespace std;
