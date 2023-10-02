@@ -6,16 +6,19 @@
 class Line
 {
     std::string d_line;
-    size_t substringIndex;
+    size_t d_index;
 
     public:
-        // Constructors
-        Line() = default;
-        Line(std::string line);
+        // temporary, ONLY FOR TESTING PURPOSES
+        Line(std::string str, size_t index); // temporary constructor
+        std::string line(); // temporary accessor
 
-        // Other functions
-        bool getLine();
+
+        // accessor
         std::string next();
+
+        // manipulator
+        bool getLine();
 };
 
 #endif
