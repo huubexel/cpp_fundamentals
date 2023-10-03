@@ -9,5 +9,5 @@ bool Line::getLine()
             return true;          // whitespace character, if there is at
     }                             // least one non-ws characters, return true
 
-    return false;                 // if not, return false
+    return false;                 // If not, return false
 }

@@ -9,15 +9,10 @@ class Line
     size_t d_index;
 
     public:
-        // temporary, ONLY FOR TESTING PURPOSES
-        Line(std::string str, size_t index); // temporary constructor
-        std::string line(); // temporary accessor
-
-
-        // accessor
+        // accessors
         std::string next();
 
-        // manipulator
+        // manipulators
         bool getLine();
 };
 
