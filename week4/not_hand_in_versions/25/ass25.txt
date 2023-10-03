@@ -48,5 +48,5 @@ aspect of data hiding that classes implement. Private data is not allowed to
 be touched by anything other than the fellow members of the class. 
 The information inside of d_health and d_magic stay separated 
 from the publicly available data / local data, and that data remains 
-"hidden" from code outside of the class (or the classes that inherent 
+"hidden" from code outside of the class (or the classes that inheret 
 this code, when we will be using protected later on).
