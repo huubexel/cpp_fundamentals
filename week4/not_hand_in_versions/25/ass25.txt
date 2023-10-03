@@ -38,7 +38,7 @@ encapsulated together. If the program wants to work with these pieces of
 data specifically, it must use the Wizard class member functions.
 This also allows the programmer to change the member functions as long as the
 input and output stays the same and the declaration stays the same. 
-This means that the developer using these functions does not need to worry
+The developer using these functions does not need to worry
 about the definition of the function, this makes the code more modular and 
 easy to work with.
 
@@ -46,7 +46,7 @@ There are 2 ints defined in the private part of the class. All data in
 classes are private unless specified to be public - this is an important 
 aspect of data hiding that classes implement. Private data is not allowed to 
 be touched by anything other than the fellow members of the class. 
-The information inside of d_health and d_magic stays separated 
-from the publicly available data / local data and, that data remains 
+The information inside of d_health and d_magic stay separated 
+from the publicly available data / local data, and that data remains 
 "hidden" from code outside of the class (or the classes that inherent 
 this code, when we will be using protected later on).
