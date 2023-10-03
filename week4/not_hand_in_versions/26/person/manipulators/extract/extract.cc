@@ -9,7 +9,7 @@ void Person::extract(istream &in) // datamembers according to interface
         size_t separatorPos, counter = 0;
         while ((separatorPos = line.find(',')) != string::npos)
         {                         // Send piece of data to setDataMember
-            Person::setDataMember(line.substr(0, separatorPos), counter);
+            setDataMember(line.substr(0, separatorPos), counter);
             line.erase(0, separatorPos + 1);
             ++counter;            // Erase the piece of data from line,
         }                         // including the , right behind it

@@ -4,4 +4,6 @@ int main()
 {
     Person p{ "bier", "nogmeerbier", "01231238", 75 };
     p.insert(cout);
+    p.extract(cin);
+    p.insert(cout);
 }
