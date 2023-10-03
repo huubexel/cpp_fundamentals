@@ -3,7 +3,7 @@ A programming concept where related sections of code (i.e. related functions
 and data) are bound together and are used only in relation to one
 another. Encapsulating code ensures that the code remains modular and the 
 integrity of the data remains. The class encapsulates all actions performed 
-on its data members which allows the class object to may assume the 
+on its data members. The class object may assume the 
 responsibility for its own data-integrity.
 
 Data hiding:
@@ -13,8 +13,8 @@ the data cannot directly by touched by the outer world).
 Things can access it, but only by using specific methods that the
 programmer made to either get or manipulate the data (called accessors
 and manipulators). This means that the data is much safer when compared to
-keeping all the data public. With data hiding you enforce the data-integrity,
-this is why encapsulation and data hiding go perfectly together.
+keeping all the data public. With data hiding you enforce the data-integrity.
+This is why encapsulation and data hiding go perfectly together.
 
 Consider the example of the Wizard class interface underneath:
 (only the interface is required for the understanding of code encapsulation,
@@ -49,4 +49,4 @@ be touched by anything other than the fellow members of the class.
 The information inside of d_health and d_magic stay separated 
 from the publicly available data / local data, and that data remains 
 "hidden" from code outside of the class (or the classes that inherit
-this code, when we will be using protected later on).
+this code, when we will be using 'protected' later on).
