@@ -1,17 +1,22 @@
 Encapsulation: 
-A programming concept where relatedXXX sections of code (i.e. related functions
-and data-types) are bound together and are used only in relation to one
+A programming concept where related sections of code (i.e. related functions
+and data) are bound together and are used only in relation to one
 another. Encapsulating code ensures that the code remains modular and the 
-integrity of the data remains.
+integrity of the data remains. The class encapsulates all actions performed 
+on its data members which allows the class object to may assume the 
+responsibility for its own data-integrity.
 
 Data hiding:
 When data is hidden, it cannot be touched directly by anything outside of 
-that class. Things can access it, but only by using specific methods that the
+that class or classes that extend from this class (or as the book calls it,
+the data cannot directly by touched by the outer world). 
+Things can access it, but only by using specific methods that the
 programmer made to either get or manipulate the data (called accessors
 and manipulators). This means that the data is much safer when compared to
-keeping all the data public.
+keeping all the data public. With data hiding you enforce the data-integrity,
+this is why encapsulation and data hiding perfectly together.
 
-Consider the example of the wizard class interface underneath:
+Consider the example of the Wizard class interface underneath:
 (only the interface is required for the understanding of code encapsulation, 
 because encapsulation is all about how the user approaches the data - the 
 user only ever has to see the interface of a class and not the implementation.)
@@ -27,18 +32,21 @@ class Wizard
 	
 };
 
-In the above example of the class wizard, the 2 ints d_health and d_magic,
+In the example above of the Wizard class, the 2 ints d_health and d_magic,
 the constructor Wizard() and the member function fireball() are all 
-encapsulated together. Working with these pieces of data specifically 
-requires the program to run them through the Wizard class frameworkXXX - 
-therefore if the programmer ever wishes to change something about fireball(),
-they can do so safely without worrying about the rest of the program.
-XXX verschil declaration and definition ff noemen
+encapsulated together. If the program wants to work with these pieces of 
+data specifically, it must use the Wizard class member functions.
+This also allows the programmer to change the member functions as long as the
+input and output stays the same and the declaration stays the same. 
+This means that the developer using these functions does not need to worry
+about the definition of the function, this makes the code more modular and 
+easy to work with.
 
 There are 2 ints defined in the private part of the class. All data in 
 classes are private unless specified to be public - this is an important 
 aspect of data hiding that classes implement. Private data is not allowed to 
-be touched XXXby the program by anything other than the fellow members of the 
-block in which it was defined. This allows the information inside of d_health
- and d_magic to stay separated XXX(separated from what????) and for that data to remain "hidden" from the 
-computerXXX(the computer is hier niet het woord).
+be touched by anything other than the fellow members of the class. 
+The information inside of d_health and d_magic stays separated 
+from the publicly available data / local data and, that data remains 
+"hidden" from code outside of the class (or the classes that inherent 
+this code, when we will be using protected later on).
