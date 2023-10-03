@@ -17,9 +17,9 @@ keeping all the data public. With data hiding you enforce the data-integrity,
 this is why encapsulation and data hiding perfectly together.
 
 Consider the example of the Wizard class interface underneath:
-(only the interface is required for the understanding of code encapsulation, 
-because encapsulation is all about how the user approaches the data - the 
-user only ever has to see the interface of a class and not the implementation.)
+(only the interface is required for the understanding of code encapsulation,
+because encapsulation is all about how the user approaches the data, the user
+only ever has to see the interface of a class and not the implementation.)
 
 class Wizard
 {
