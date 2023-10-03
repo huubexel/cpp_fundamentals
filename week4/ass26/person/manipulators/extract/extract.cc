@@ -1,4 +1,4 @@
-#include "../../../main/internal_header/main.ih"
+#include "../../internal_header/person.ih"
                                   // Get data from input and put it in the
 void Person::extract(istream &in) // datamembers according to interface
 {                                 // order, with helper func setDatamember

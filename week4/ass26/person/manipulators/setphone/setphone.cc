@@ -1,4 +1,4 @@
-#include "../../../main/internal_header/main.ih"
+#include "../../internal_header/person.ih"
 
 void Person::setPhone(string const &phone)
 {                            // Set this persons' phonenumber

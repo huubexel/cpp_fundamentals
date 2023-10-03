@@ -12,7 +12,7 @@ class Person
 
     public:
         // constructors
-        Person()                  // delegating constructor that sets
+        Person()                  // Delegating constructor that sets
         :                         // everything to to an empty string or 0
             Person("", "", "", 0)
         {}

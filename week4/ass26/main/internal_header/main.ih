@@ -1,5 +1,0 @@
-#include "../../person/public_header/person.hh"
-
-#include <iostream>
-
-using namespace std;

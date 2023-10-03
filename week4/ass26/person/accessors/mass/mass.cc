@@ -1,4 +1,4 @@
-#include "../../../main/internal_header/main.ih"
+#include "../../internal_header/person.ih"
 
 size_t Person::mass() const
 {                            // Return this persons' mass

@@ -1,4 +1,4 @@
-#include "../../../main/internal_header/main.ih"
+#include "../../internal_header/person.ih"
 
 void Person::setName(string const &name)
 {                            // Set this persons' name
