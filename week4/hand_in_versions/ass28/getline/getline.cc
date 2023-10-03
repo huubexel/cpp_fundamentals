@@ -1,4 +1,4 @@
-#include "../../internal_header/line.ih"
+#include "../internal_header/line.ih"
 
 bool Line::getLine()
 {
