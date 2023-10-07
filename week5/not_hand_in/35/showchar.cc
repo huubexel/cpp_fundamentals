@@ -1,4 +1,4 @@
-#include "internal_header/charcount.cc"
+#include "internal_header/charcount.ih"
 
 void showChar(char const &ch)
 {
