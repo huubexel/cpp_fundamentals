@@ -1,0 +1,7 @@
+#include "../pub_header_charinfo/charinfo.hh"
+#include "../pub_header_charcount/charcount.hh"
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
