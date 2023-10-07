@@ -1,10 +1,6 @@
 #ifndef INClUDED_CHARINFO_
 #define INClUDED_CHARINFO_
 
-#include <cstddef>
-
-struct Char;
-
 struct CharInfo
 {
     Char *ptr;

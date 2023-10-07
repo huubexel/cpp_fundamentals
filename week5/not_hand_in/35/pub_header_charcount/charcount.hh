@@ -4,8 +4,6 @@
 #include <string>
 #include <iostream>
 
-struct CharInfo;
-
 class CharCount
 {
 
