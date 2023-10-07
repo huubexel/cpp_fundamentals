@@ -1,6 +1,6 @@
 #include "../internal_header/charcount.ih"
 
-CharInfo CharCount::charInfoStructObject()
+CharInfo const &CharCount::info() const
 {
     return d_charInfoStructObject;
 }

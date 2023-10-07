@@ -13,11 +13,9 @@ class CharCount
 
     public:
         CharCount();
-        CharInfo charInfoStructObject();
-
 
         size_t count(std::istream &in = std::cin);
-        //CharInfo const &info();
+        CharInfo const &info() const;
 };
 
 void showChar(char const &ch);
