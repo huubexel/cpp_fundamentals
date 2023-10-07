@@ -1,6 +1,7 @@
 #include "../pub_header_char/char.hh"
 #include "../pub_header_charinfo/charinfo.hh"
 #include "../pub_header_charcount/charcount.hh"
+#include "../declaration_showchar/showchar.hh"
 
 #include <iostream>
 #include <fstream>

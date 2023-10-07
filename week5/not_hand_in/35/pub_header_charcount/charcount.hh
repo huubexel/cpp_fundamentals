@@ -18,6 +18,4 @@ class CharCount
         CharInfo const &info() const;
 };
 
-void showChar(char const &ch);
-
 #endif

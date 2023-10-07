@@ -4,7 +4,7 @@ int main()
 {
     // string textString = readTestFile();
     // for (char ch: textString)
-    //     showChar(ch);
+    showChar('b');
 
     CharCount cc{};
     cout << cc.count() << '\n';
