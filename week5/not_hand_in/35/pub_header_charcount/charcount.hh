@@ -19,6 +19,5 @@ class CharCount
 };
 
 void showChar(char const &ch);
-std::string readTestFile();
 
 #endif
