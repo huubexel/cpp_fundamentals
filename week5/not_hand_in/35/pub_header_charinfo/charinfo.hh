@@ -4,7 +4,7 @@
 struct CharInfo
 {
     Char *ptr;
-    size_t nCharObj = 0;          // number of CharObjects pointed to
+    size_t nCharObj = 0;          // Number of CharObjects pointed to
 };
 
 #endif
