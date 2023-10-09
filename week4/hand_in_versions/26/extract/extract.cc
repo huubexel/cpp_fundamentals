@@ -1,4 +1,4 @@
-#include "../../internal_header/person.ih"
+#include "../internal_header/person.ih"
 
 void Person::extract3(istream &in)
 {
