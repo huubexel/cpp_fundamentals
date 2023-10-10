@@ -10,7 +10,7 @@ class CharCount
     CharInfo d_charInfoStructObject;
 
     public:
-        CharCount();
+        CharCount(CharInfo charInfoObject = CharInfo{});
 
         size_t count(std::istream &in = std::cin);
         CharInfo const &info() const;
