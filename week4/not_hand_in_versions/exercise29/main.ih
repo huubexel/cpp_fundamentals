@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+#include "parser/public_header/parser.h"
+#include "line/public_header/line.hh"
+
+
+namespace Icmake
+{
+    extern char version[];
+    extern char years[];
+    extern char author[];
+};
+
+void usage(std::string const &progname);
+
+using namespace std;

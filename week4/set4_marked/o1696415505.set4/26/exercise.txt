@@ -1,0 +1,2 @@
+Implement the class "Person" as discussed in the C++ Annotations with additional members insert, and extract.
+

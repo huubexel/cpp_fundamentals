@@ -1,6 +1,6 @@
-#include "../../internal_header/person.ih"
+#include "../internal_header/person.ih"
 
-void Person::setDataMember(string &data, size_t counter)
+void Person::setDataMember(string &&data, size_t counter)
 {                                   // According to the counter, set a
     switch (counter)                // datamember everytime this function is
     {                               // called

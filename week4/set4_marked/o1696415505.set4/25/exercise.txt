@@ -1,0 +1,4 @@
+What is the meaning of 'encapsulation' and 'data hiding',
+why are they important when desiging classes
+and why is the implementation irrelevant?
+

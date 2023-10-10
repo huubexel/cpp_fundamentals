@@ -1,0 +1,4 @@
+Design a class Line with two members, 
+one that returns true if the line read contains non-ws characters, 
+the other returns the next line consisting of non-ws characters.
+

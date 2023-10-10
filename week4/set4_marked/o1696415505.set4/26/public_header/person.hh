@@ -32,15 +32,13 @@ class Person
 
         void setDataMember(std::string &data, size_t counter);
 
-        // static
+        // static       
         static bool const hasOnly(std::string const &&charsAllowed,
                                   std::string const &stringToCheck);
 
         // other
         void insert(std::ostream &out);
-        //void extract(std::istream &in);
-        //void extract2(std::istream &in);
-        void extract3(std::istream &in);
+        void extract(std::istream &in);
 };
 
 #endif
