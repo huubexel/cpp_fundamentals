@@ -3,10 +3,10 @@
 
 #include <cstddef>
 
-struct Char
+struct Char                  // This holds the amount of one char in a file
 {
-    char ch;
-    size_t count = 0;
+    char ch;                 // The char that is counted
+    size_t count = 0;        // The amount of times that char is counted
 };
 
 #endif

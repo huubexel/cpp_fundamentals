@@ -2,5 +2,5 @@
 
 CharInfo const &CharCount::info() const
 {
-    return d_charInfoStructObject;
-}
+    return d_charInfoStructObject; // Returns the data member of type
+}                                  // CharInfo (which is a struct)
