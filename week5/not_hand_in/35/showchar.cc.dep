@@ -1,0 +1,7 @@
+showchar.o: showchar.cc charcount/charcount.ih \
+ charcount/../charinfo/charinfo.hh charcount/../char/char.hh \
+ charcount/charcount.hh
+charcount/charcount.ih:
+charcount/../charinfo/charinfo.hh:
+charcount/../char/char.hh:
+charcount/charcount.hh:

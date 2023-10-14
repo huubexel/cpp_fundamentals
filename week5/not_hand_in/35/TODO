@@ -1,0 +1,7 @@
+- CharInfo and Char should be inside of Charcount (this is probably the way to fix
+ the internal header thing)
+- Internal and public header files should be reshaped.
+- use get() in the count function
+- // ML: NAE, the class should also count and keep track of character frequencies
+  // (stored in CharInfo).
+- Maybe put d in front of them.

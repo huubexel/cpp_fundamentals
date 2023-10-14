@@ -1,0 +1,6 @@
+charcount/charcount.ih.gch: charcount/charcount.ih \
+ charcount/../charinfo/charinfo.hh charcount/../char/char.hh \
+ charcount/charcount.hh
+charcount/../charinfo/charinfo.hh:
+charcount/../char/char.hh:
+charcount/charcount.hh:
