@@ -1,6 +1,8 @@
-Sed malesuada, urna ac consectetur tempus, elit nulla vestibulum velit, 
-\nec ultrices erat quam at dolor. Quisqu		e malesuada, justo sit amet ullamcorper viverra, nisi metus dictum velit, non dictum tortor augue non lorem. 
+ \nec ultrices erat quam at dolor. Quisqu		e malesuada, justo sit amet ullamcorper viverra, nisi metus dictum velit, non dictum tortor augue non lorem. 
 nulla iaculis. Fusce tristique,	erat ut feugiat bibendum,	ex felis hendrerit arcu,      vel dapibus libero urna sit amet ex. 
 \Nullam sit amet ullamcorper    elit, vel congue tellus. Sed ac congue justo. In eget ante eget lectus pellentesque elementum. 
 Lekker biertjes drinken			hahah,lol, sukkels.
+Ja wat er moet gebeuren is er moet een data member komen dan daarin moet de volgorde opgeslagen worden
+en hoe dat moet gebeuren is alsvolgt, loop door alle characters heen en als de character dan een true heeft
+dan moet hij hem inserten vlak voor die character
 	

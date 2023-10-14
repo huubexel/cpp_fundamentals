@@ -2,11 +2,10 @@
 
 size_t CharCount::count(istream &in)   // if no 'in' is given, this is cin
 {
-    size_t amounOfChars = 0;
-    string line;                       // used to get the line length from
+    string line;
 
-    while (getline(in, line))          // 
-        amounOfChars += line.length();
+    while (getline(in, line))          // Append the lenght of the lines to 
+        amounOfChars += line.length(); // the total
 
     return amounOfChars;               // Return amount of chars in the file
 }
