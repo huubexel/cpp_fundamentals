@@ -1,0 +1,52 @@
+// ML: 0
+1. Pointer variables are datatypes which save the address of other 
+   variables. An array is an organized data structure which saves
+   variables next to each other to be organized sequentially.
+   The big difference in their implementation is their location in memory.
+   Pointer variables can be stored anywhere in the memory, and simply 
+   contain the address of where the information can be found for the 
+   compiler to seek out. Arrays make sure to store the information of the 
+   variables which they keep right next to each other in memory. The name
+   of the array defined is a pointer to the first position - when asked to
+   index the array, for example array[0], you are asking for the data stored
+   exactly 0 places/memory slots away from the beginning of the array. 
+   This way, parsing through an array means you must always go to the start
+   and then walk through the entire array - with pointers, you can go directly
+   to the data at the address you wish to arrive at. An array is a bit like a
+   city bus, with predetermined stops you have to sit through to get around 
+   and a pointer is like a taxi, taking you exactly where you want to go.
+   ML: Not quite: pointers can point to a consecutive block of
+   memory just fine. Also arrays are not linked lists. arr[idx] for some 0 <= idx < len
+   can be accessed in O(1) time without going through each element one by one.
+
+
+2. Pointer variables are full variables, with a data value assigned and a
+   location in memory given to it by the program. A reference variable
+   is just an alias for another variable - they contain the same address 
+   data as the variable they are referencing, guiding the compiler to the 
+   same place. To the compiler, it is interpreted as a pointer which can
+   never change what it is pointing to - a const pointer. A pointer, on
+   the other hand, can be reassigned to different locations in memory.
+
+3. In an array, first you must start at array[0][0], move down to array[3][0],
+   then step twice to get to array[3][2]. With a pointer array, you simply
+   call *pointer[3] to go straight to array[3][0], then you count two steps
+   towards array[3][2].
+   // ML: For multi-dimensional arrays the interpretation is not entirely correct
+   // (or at least missing some detail).
+   // Hint: a multi-dimensional array is stored consecutively in memory.
+
+4. Pointer arithmetic describes defining a separate pointer by either adding
+   or subtracting from another pointer moves the memory location in which it
+   points. For example, for a pointe *ptr pointing to memory location x, the
+   pointer *(ptr + 1) points 1 step after the memory location of *ptr, which
+   would be x + 1. They also follow the same commutivity laws of addition, 
+   which means that *(ptr + 1) = *(1 + ptr). Additionally, another important 
+   element of pointer arithmetic is the indirection operators & and *. '*' 
+   removes a level of indirection by asking to reference the data of whatever 
+   it operates on. '&' Adds a level of indirection by asking to reference the
+   address of the variable it operates on. & is treated as the mathematical 
+   inverse of *, and using one right after another leads to them canceling
+   out to the identity (i.e. *&var = &*var = var)
+   // ML: You can also do pointer difference.
+

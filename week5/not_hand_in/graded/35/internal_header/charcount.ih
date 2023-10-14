@@ -1,0 +1,9 @@
+#include "../pub_header_char/char.hh"
+#include "../pub_header_charinfo/charinfo.hh"
+#include "../pub_header_charcount/charcount.hh"
+#include "../declaration_showchar/showchar.hh"
+// The order of these includes needs to be in this exact way
+// ML: Try to find a way where the order of header files
+// is not crucial.
+
+using namespace std;

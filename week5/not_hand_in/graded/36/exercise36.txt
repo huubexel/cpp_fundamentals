@@ -1,0 +1,65 @@
+// ML: 0
+----------------------------------------------------------------------------
+  definition:         rewrite: 
+----------------------------------------------------------------------------
+  int x[8];           x[4]            
+
+pointer notation:  *(x + 4);
+       semantics:  x + 4 points to the location of the 4th int beyond x.
+                   That element is reached using the dereference operator (*)
+
+----------------------------------------------------------------------------
+  int x[8];           x[2] = x[3];
+
+pointer notation:  *(x+2) = *(x+3);       // ML: BABO
+       semantics:  set the data located in the second index after x to be
+                   equal to the data located in the third index after x.
+                   // ML: Missing some detail, what does operator* do?
+                   // Otherwise good.
+----------------------------------------------------------------------------
+  char *argv[8];      cout << argv[2];
+
+pointer notation:  cout << *(argv + 2);     
+       semantics:  Prints out the data of the 2nd index after argv[0], 
+                   which means that pointer data of argv[2] is printed.
+                   // Same feedback as previous.
+----------------------------------------------------------------------------
+  int x[8];           &x[10] - &x[3];
+ 
+pointer notation:  x + 10 - x + 3;    
+       semantics:  subtract the location of the 10th index from the 3rd,
+                   resulting in the distance between both address points.
+                   // ML: The pointer notation can be further simplified.
+----------------------------------------------------------------------------
+  main's argv;        argv++[0];
+
+pointer notation:  *argv++; 
+       semantics:  Prints out data at arg[0], then increments pointer to
+                   point to next place in array - in this case, the beginning
+                   of the next argument.
+---------------------------------------------------------------------------
+  main's argv;        argv[0]++;
+
+pointer notation:  (*argv)++;
+       semantics:  Increments the pointer to char of argv[0] by 1,
+                   so next time argv[0] is called, the 0th char is
+                   of the first argument is omitted (i.e. /a.o instead 
+                   of ./a.o)
+                   // ML: SF parentheses.
+----------------------------------------------------------------------------
+  main's argv;        ++argv[0];
+
+pointer notation:  ++(*argv[0]);
+       semantics:  Increments the pointer to chars of first argument, 
+                   then returns the incremented value.
+                   // ML: Again what does operator* do? Also SF parentheses.
+----------------------------------------------------------------------------
+  main's argv;        ++argv[0][2];
+
+pointer notation:  ++*(*argv + 2);  
+       semantics:  Increments the char, increasing its value. In the case
+                   of argv being passed as "./a.o 1 2", argv[0][2] or
+                   *(*argv + 2) refers to the 'a' char, incrementing to a 'b'
+                   // ML: Correct, but clarify how you obtain the char.
+----------------------------------------------------------------------------
+

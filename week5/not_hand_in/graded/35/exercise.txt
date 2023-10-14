@@ -1,0 +1,3 @@
+Create a CharCount class that counts all occurences of a character inside 
+of a file.
+

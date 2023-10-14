@@ -1,0 +1,1 @@
+Translate written descriptions of pointers to C++ declarations.

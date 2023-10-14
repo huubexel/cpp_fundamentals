@@ -1,0 +1,4 @@
+Description of differences between 1) pointers and arrays, 2) pointers and
+references, 3) how elements are reached using array indexing and pointers
+and 4) the definition of pointer arithmetic.
+
