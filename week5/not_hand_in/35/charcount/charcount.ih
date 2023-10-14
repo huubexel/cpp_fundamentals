@@ -1,5 +1,3 @@
-#include "../charinfo/charinfo.hh"
-#include "../char/char.hh"
 #include "charcount.hh"
 
 #include <string>
