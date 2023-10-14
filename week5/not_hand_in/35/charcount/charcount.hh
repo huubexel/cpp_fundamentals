@@ -6,16 +6,16 @@
 struct CharCount
 {
 
-    struct CharInfo               // This points to (struct) Char Objects
+    struct CharInfo        // This points to (struct) Char Objects
     {
-        struct Char              // Holds the amount of one distinct char in a file
+        struct Char        // Holds the amount of one distinct char in a file
         {
-            char ch;             // The distinct char that is counted
-            size_t count = 0;    // The amount of times that char is in the file
+            char ch;       // The distinct char that is counted
+            size_t count;  // The amount of times that char is in the file
         };
 
-        Char *ptr;                // Pointer to Char objects
-        size_t nCharObj = 0;      // Number of Char objects pointed to
+        Char *ptr;         // Pointer to Char objects
+        size_t nCharObj;   // Number of Char objects pointed to
     };
 
     // Fields
