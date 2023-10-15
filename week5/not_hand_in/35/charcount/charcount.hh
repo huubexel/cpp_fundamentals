@@ -5,6 +5,9 @@
 
 enum class Action;
 
+struct Char;
+struct CharInfo;
+
 struct CharCount
 {
     struct CharInfo        // This points to (struct) Char Objects
@@ -27,6 +30,7 @@ struct CharCount
     size_t count(std::istream &in = std::cin);
     CharInfo const &info() const;
     Action locate(char ch);
+    void append(char ch);
 
 };
 

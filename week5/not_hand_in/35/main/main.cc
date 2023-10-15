@@ -2,6 +2,6 @@
 
 int main()
 {
-    CharCount cc {};
+    CharCount cc { { new Char, 0 }, 0 };
     cout << cc.count() << '\n';
 }

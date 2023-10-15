@@ -1,7 +1,7 @@
 #include "charcount.hh"
 
-enum class Action // I think that this shouldn't be here
-{
+enum class Action // I think that this shouldn't be here,
+{                 // this should probably have its own file
     APPEND,
     INSERT,
     INC
