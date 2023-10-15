@@ -1,3 +1,2 @@
-- use get() in the count function
 - // ML: NAE, the class should also count and keep track of character frequencies
   // (stored in CharInfo).

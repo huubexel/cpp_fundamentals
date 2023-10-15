@@ -3,5 +3,5 @@
 int main()
 {
     CharCount cc {};
-    
+    cout << cc.count() << '\n';
 }

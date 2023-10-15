@@ -3,9 +3,10 @@
 
 #include <iostream>
 
+enum class Action;
+
 struct CharCount
 {
-
     struct CharInfo        // This points to (struct) Char Objects
     {
         struct Char        // Holds the amount of one distinct char in a file
@@ -20,10 +21,13 @@ struct CharCount
 
     // Fields
     CharInfo d_charInfo;
+    size_t d_location;
 
     // Functions
     size_t count(std::istream &in = std::cin);
-    CharInfo const &info() const;  // Accessor charInfoObject
+    CharInfo const &info() const;
+    Action locate(char ch);
+
 };
 
 #endif
