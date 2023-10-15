@@ -8,16 +8,16 @@ size_t CharCount::count(istream &in)   // if no 'in' is given, this is cin
     {
         switch (locate(ch))
         {
-            case APPEND:
+            case Action::APPEND:
                 append(ch);
             break;
 
-            case INSERT:
+            case Action::INSERT:
                 insert(ch);
             break;
 
-            case INC:
-                inc(ch);
+            case Action::INC:
+                inc();
             break;
         }
         ++amounOfChars;

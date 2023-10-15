@@ -18,20 +18,22 @@ struct CharCount
             size_t count;  // The amount of times that char is in the file
         };
 
-        Char *ptr;         // Pointer to Char objects
+        Char *ptr;         // Pointer array to Char objects
         size_t nCharObj;   // Number of Char objects pointed to
     };
 
     // Fields
     CharInfo d_charInfo;
-    size_t d_location;
+    size_t d_location;     // set in the locate function
 
     // Functions
     size_t count(std::istream &in = std::cin);
     CharInfo const &info() const;
-    Action locate(char ch);
-    void append(char ch);
+    Action locate(char character);
 
+    void append(char character);
+    void insert(char character);
+    void inc();
 };
 
 #endif

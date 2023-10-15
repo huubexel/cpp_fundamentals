@@ -1,0 +1,17 @@
+Exercise 42.
+Basic exercise
+Purpose of this exercise: Familiarize yourself with the various new/delete variants.
+What are the variants of new/delete? For each of the variants provide a (short!) example in which the used new/delete is appropriate and provide a short explanation why it is appropriately used.
+
+Hint: try to find six variants of new.
+
+
+1. new
+
+2. new[]
+
+3. placement new, which is new(); Raw memory
+
+4. new[]()
+
+5. operator new(), castable raw memory

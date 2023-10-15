@@ -1,0 +1,111 @@
+// ML: 0
+
+1. There are a few differences between pointer variabels and arrays. 
+
+   The most easy to spot difference is the difference of syntax with which
+   you can use them. With pointer variabels, pointer arithmetic is possible
+   which allows for the implementation of complex data structures such as
+   trees and linked lists. For arrays, you can easily get the addresses of
+   items in the array, however pointer arithmetic isn't available for arrays.
+
+   A difference between arrays and pointer variables is that while it is
+   possible to get the size of the array, it is not possible to get the size
+   for a pointer (without having a look at the code directly). There is no 
+   piece of code that can tell you what size a pointer has. For an array the
+   piece of code that you would use to get the size of the array would look
+   like this: size_t arraySize = sizeof(arr) / sizeof(arr[0]);
+
+   Another difference between a pointer variable and an array is that the
+   pointer variable is more dynamic. The pointer from this variable points
+   to a place in memory so as long as you make sure that it keeps pointing
+   at a place memory, anything can go there (as long as its the same type).
+   With an array, this is not that easy. Say you have two pointer variables
+   and you want to swap the places in memory at which they point, than this
+   is done quite easily (when swapping for example the places in memory for
+   two ints). If you want to swap two arrays around, it is going to be a
+   different story, and it going to be way harder to do.
+
+2. Pointer variables are full variables, with a data value assigned and a
+   location in memory given to it by the program. A reference variable
+   is just an alias for another variable - they contain the same address 
+   data as the variable they are referencing, guiding the compiler to the 
+   same place. To the compiler, it is interpreted as a pointer which can
+   never change what it is pointing to - a const pointer. A pointer, on
+   the other hand, can be reassigned to different locations in memory.
+
+3. In an array, first you must start at array[0][0], move down to array[3][0],
+   then step twice to get to array[3][2]. With a pointer array, you simply
+   call *pointer[3] to go straight to array[3][0], then you count two steps
+   towards array[3][2].
+   // ML: For multi-dimensional arrays the interpretation is not entirely correct
+   // (or at least missing some detail).
+   // Hint: a multi-dimensional array is stored consecutively in memory.
+
+4. Pointer arithmetic is getting the memory place a pointer points at, and 
+   adding and or substraction decimal values (or other memory places)
+   from that memory place
+
+4. Pointer arithmetic is adding or subtracting places in memory (iets over pointer syntax) to get answers on questions needed elsewhere.
+
+4. Pointer arithmetic describes defining a separate pointer by either adding
+   or subtracting from another pointer moves the memory location in which it
+   points. For example, for a pointer *ptr pointing to memory location x, the
+   pointer *(ptr + 1) points 1 step after the memory location of *ptr, which
+   would be x + 1. They also follow the same commutivity laws of addition, 
+   which means that *(ptr + 1) = *(1 + ptr). Additionally, another important 
+   element of pointer arithmetic is the indirection operators & and *. '*' 
+   removes a level of indirection by asking to reference the data of whatever 
+   it operates on. '&' Adds a level of indirection by asking to reference the
+   address of the variable it operates on. & is treated as the mathematical 
+   inverse of *, and using one right after another leads to them canceling
+   out to the identity (i.e. *&var = &*var = var)
+   // ML: You can also do pointer difference.
+
+
+
+   // rewrite
+4. Pointer arithmetic describes defining a separate pointer by either adding
+   or subtracting from another pointer moves the memory location in which it
+   points. 
+   
+   
+   
+   For example, for a pointer *ptr pointing to memory location z, lets say that z is
+   0x8044. A real place in memory probably has more digits, but this is just for the example.
+   If you would now do cout << ptr + 1 << '\n';
+   The thing that would print is 0x8048, because the int takes up 4 bytes, the bytes
+   0x8044, 0x8045, 0x8046 and 0x8047. So the memory place after that int would be 0x8048.
+   Alright this is not very usefull unless you have a pointer 
+
+
+   pointer *(ptr + 1) points 1 step after the memory location of *ptr, which
+   would be x + 1. They also follow the same commutivity laws of addition, 
+   which means that *(ptr + 1) = *(1 + ptr). Additionally, another important 
+   element of pointer arithmetic is the indirection operators & and *. '*' 
+   removes a level of indirection by asking to reference the data of whatever 
+   it operates on. '&' Adds a level of indirection by asking to reference the
+   address of the variable it operates on. & is treated as the mathematical 
+   inverse of *, and using one right after another leads to them canceling
+   out to the identity (i.e. *&var = &*var = var)
+   // ML: You can also do pointer difference.
+
+
+
+
+
+
+
+
+
+
+
+
+1.what differences exist between pointer variables and arrays;
+3.how element [3][2] is reached (once you receive a confirmation that the submission containing this exercise was accepted, 
+    send a separate e-mail containing a drawing illustrating how the element is reached to the rater of your exercises):
+
+        a: for the variable `int array[20][30]'
+        b: for the variable `int *pointer[20]'.
+            
+Your drawing should clearly show how the memory is accessed when using an array and when using a pointer;
+4.what is meant by `pointer arithmetic';

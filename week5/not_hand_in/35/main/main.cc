@@ -2,6 +2,11 @@
 
 int main()
 {
-    CharCount cc { { new Char, 0 }, 0 };
-    cout << cc.count() << '\n';
+    CharCount cc{};
+    cc.count();
+    for (size_t counter = 0; counter != cc.info().nCharObj; ++counter)
+    {
+        showChar((cc.info().ptr + counter)->ch);
+        cout << (cc.info().ptr + counter)->count << '\n';
+    }
 }
