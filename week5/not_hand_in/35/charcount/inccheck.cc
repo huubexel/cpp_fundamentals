@@ -1,4 +1,5 @@
-    
+#include "charcount.ih"
+
 bool CharCount::incCheck(char character)
 {
     // This function checks whether the character is already stored in the
