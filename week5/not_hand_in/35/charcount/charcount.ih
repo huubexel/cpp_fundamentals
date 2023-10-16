@@ -1,8 +1,8 @@
 #include "charcount.hh"
 #include "../showchar/showchar.hh"
 
-enum class Action // I think that this shouldn't be here,
-{                 // this should probably have its own file
+enum class Action
+{
     APPEND,
     INSERT,
     INC

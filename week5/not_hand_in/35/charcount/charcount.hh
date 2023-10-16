@@ -19,18 +19,19 @@ struct CharCount
         };
 
         Char *ptr;         // Pointer array to Char objects
-        size_t nCharObj;   // Number of Char objects pointed to
+        size_t nCharObj;   // Number of Char objects pointed to by ptr
     };
 
     // Fields
     CharInfo d_charInfo;
-    size_t d_location;     // set in the locate function
+    size_t d_location;     // This gets set in the locate function
 
     // Functions
     size_t count(std::istream &in = std::cin);
     CharInfo const &info() const;
     Action locate(char character);
 
+    // Action functions
     void append(char character);
     void insert(char character);
     void inc();

@@ -1,5 +1,5 @@
 #include "charcount.ih"
-
+// TODO
 size_t CharCount::count(istream &in)   // if no 'in' is given, this is cin
 {
     size_t amounOfChars = 0;
@@ -25,3 +25,6 @@ size_t CharCount::count(istream &in)   // if no 'in' is given, this is cin
 
     return amounOfChars;               // Return amount of chars in the file
 }
+
+// We know this is longer than 20 lines for a function, but Jurjen and Frank
+// told us that we can make an exception for a small switch statement

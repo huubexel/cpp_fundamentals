@@ -1,15 +1,18 @@
 #include "charcount.ih"
-
+//TODO to long
 Action CharCount::locate(char character)
 {
-    // if ptr is empty
-    if (d_charInfo.nCharObj == 0)
+    if (d_charInfo.nCharObj == 0) // This only gets triggered when ptr is empty
     {
         d_location = 0;
         return Action::APPEND;
     }
 
-    // increment
+    // Append
+    if ((d_charInfo.ptr + (d_charInfo.nCharObj - 1))->ch < character)
+        return Action::APPEND;
+
+    // Increment
     for (size_t counter = 0; counter < d_charInfo.nCharObj; ++counter)
     {
         if ((d_charInfo.ptr + counter)->ch == character)
@@ -19,11 +22,7 @@ Action CharCount::locate(char character)
         }
     }
 
-    // append
-    if ((d_charInfo.ptr + (d_charInfo.nCharObj - 1))->ch < character)
-        return Action::APPEND;
-
-    // insert
+    // Insert
     size_t counter = 0;
     while ((d_charInfo.ptr + counter)->ch < character)
         ++counter;
