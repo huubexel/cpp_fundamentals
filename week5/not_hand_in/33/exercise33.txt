@@ -31,13 +31,20 @@
    never change what it is pointing to - a const pointer. A pointer, on
    the other hand, can be reassigned to different locations in memory.
 
-3. In an array, first you must start at array[0][0], move down to array[3][0],
-   then step twice to get to array[3][2]. With a pointer array, you simply
-   call *pointer[3] to go straight to array[3][0], then you count two steps
-   towards array[3][2].
-   // ML: For multi-dimensional arrays the interpretation is not entirely correct
-   // (or at least missing some detail).
-   // Hint: a multi-dimensional array is stored consecutively in memory.
+3. An array is stored consecutively in memory so say you have an array of
+   [3][2], which is 4 arrays of length 3, stored "in a base array" of 
+   length 2. Then how it is stored is as follows, you start at [0][0] which
+   is index 0 of the base array, for the example, say that the thing you 
+   store needs 4 bytes (for example an int). Then the first int of the 
+   array is at place 0 in memory, the second at place the first memory 
+   address + 4, than you are at [0][1], at [0][2] you are at the memory 
+   location of [0][0] + 8, when you have arrays of length 3. 
+   Then the array continues to the second array in the multi-dimensional 
+   array, so now you are at [1][0], this is at memory 
+   address from [0][0] + 12. Then [1][1] is memory address 
+   from [0][0] + 16, etc etc. Than [3][2] is memory address of [0][0] +
+   (3 * 3 * bytesInInt) (these are the first 3 arrays) + (2 * bytesInInt)
+   (this is for array 4).
 
 4. Pointer arithmetic is adding or subtracting integers on places 
    in memory, so that the pointer points to a different memory address.
@@ -47,15 +54,14 @@
    this is just for the example. If you would now do 
    cout << ptr + 1 << '\n'; the thing that would print is 0x8048, 
    because the int takes up 4 bytes, the bytes 
-   0x8044, 0x8045, 0x8046 and 0x8047. 
+   0x8044, 0x8045, 0x8046 and 0x8047.
    So the memory place after that int would be 0x8048.
    This could be usefull in situations, a good example of such a situation 
-   is when the pointer points to an array. You cannot use indexing on a 
-   pointer, so how would you go to for example the third item in the array? 
-   You cannot do *intArray[2] or something like that, so how
-   would you go there, you use pointer arithmetic. With pointer arithmetic 
-   you can do the following *(intArray +  2), now you are at the third item
-   in the intArray.
+   is when the pointer points to an array. How would you go to for example 
+   the third item in the array? 
+   You use pointer arithmetic. With pointer arithmetic 
+   you can do the following *(intArray +  2), now you are at the third 
+   item in the intArray.
 
    They also follow the same commutivity laws of addition and substraction 
    (pointer difference), which means that *(ptr + 1) = *(1 + ptr). 
@@ -66,22 +72,3 @@
    address of the variable it operates on. & is treated as the mathematical 
    inverse of *, and using one right after another leads to them canceling
    out to the identity (i.e. *&var = &*var = var)
-
-
-
-
-
-
-
-
-
-
-1.what differences exist between pointer variables and arrays;
-3.how element [3][2] is reached (once you receive a confirmation that the submission containing this exercise was accepted, 
-    send a separate e-mail containing a drawing illustrating how the element is reached to the rater of your exercises):
-
-        a: for the variable `int array[20][30]'
-        b: for the variable `int *pointer[20]'.
-            
-Your drawing should clearly show how the memory is accessed when using an array and when using a pointer;
-4.what is meant by `pointer arithmetic';
