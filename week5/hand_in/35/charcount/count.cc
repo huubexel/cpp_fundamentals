@@ -8,15 +8,15 @@ size_t CharCount::count(istream &in)   // If no 'in' is given, this is cin
     {
         switch (locate(ch))            // Locate(ch) returns an Action that
         {                              // needs to be performed, this switch
-            case Action::APPEND:       // case will make sure that the
+            case APPEND:       // case will make sure that the
                 append(ch);            // corresponding Action get performed
             break;
 
-            case Action::INSERT:
+            case INSERT:
                 insert(ch);
             break;
 
-            case Action::INC:
+            case INC:
                 inc();
             break;
         }

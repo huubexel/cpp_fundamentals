@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-enum class Action
+enum Action
 {
     APPEND,
     INSERT,
