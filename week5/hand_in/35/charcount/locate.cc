@@ -3,10 +3,7 @@
 Action CharCount::locate(char character)
 {
     if (d_charInfo.nCharObj == 0)
-    {                          // This only gets triggered when ptr is empty
-        d_location = 0;        // Which is on the very first locate call.
         return Action::APPEND;
-    }
 
     if ((d_charInfo.ptr + (d_charInfo.nCharObj - 1))->ch < character)
         return Action::APPEND; // Append

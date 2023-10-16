@@ -3,7 +3,12 @@
 
 #include <iostream>
 
-enum class Action;
+enum class Action
+{
+    APPEND,
+    INSERT,
+    INC
+};
 
 struct Char;
 struct CharInfo;
@@ -14,28 +19,31 @@ struct CharCount
     {
         struct Char        // Holds the amount of one distinct char in a file
         {
-            char ch;       // The distinct char that is counted
-            size_t count;  // The amount of times that char is in the file
+            char ch = 0;       // The distinct char that is counted
+            size_t count = 0;  // The amount of times that char is in the file
         };
 
-        Char *ptr;         // Pointer array to Char objects
-        size_t nCharObj;   // Number of Char objects pointed to by ptr
+        Char *ptr = 0;         // Pointer array to Char objects
+        size_t nCharObj = 0;   // Number of Char objects pointed to by ptr
     };
 
-    // Fields
-    CharInfo d_charInfo;
-    size_t d_location;     // This gets set in the locate function
+    private:
+        // Fields
+        CharInfo d_charInfo;
+        size_t d_location = 0;     // This gets set in the locate function
 
-    // Functions
-    size_t count(std::istream &in = std::cin);
-    CharInfo const &info() const;
-    Action locate(char character);
+        Action locate(char character);
 
-    // Action functions
-    void append(char character);
-    void insert(char character);
-    void inc();
-    bool incCheck(char character);
+    public:
+        CharInfo const &info() const;
+        size_t count(std::istream &in = std::cin);
+
+    private:
+        // Action functions
+        void append(char character);
+        void insert(char character);
+        void inc();
+        bool incCheck(char character);
 };
 
 #endif
