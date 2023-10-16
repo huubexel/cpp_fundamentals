@@ -35,6 +35,7 @@ struct CharCount
     void append(char character);
     void insert(char character);
     void inc();
+    bool incCheck(char character);
 };
 
 #endif
