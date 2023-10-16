@@ -1,5 +1,5 @@
 #include "charcount.ih"
-// TODO
+// TODO comments
 size_t CharCount::count(istream &in)   // if no 'in' is given, this is cin
 {
     size_t amounOfChars = 0;

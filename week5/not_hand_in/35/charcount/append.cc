@@ -2,7 +2,7 @@
 
 void CharCount::append(char character)
 {
-    // Make a new array, copy the old values and put the new Char at the end
+    // Make a new array, copy paste old values, put the new Char at the end
     CharInfo::Char *arr = new CharInfo::Char[d_charInfo.nCharObj + 1];
     for (size_t idx = 0; idx < d_charInfo.nCharObj; ++idx)
         *(arr + idx) = *(d_charInfo.ptr + idx);
