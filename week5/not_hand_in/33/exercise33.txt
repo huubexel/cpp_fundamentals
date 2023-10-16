@@ -1,5 +1,3 @@
-// ML: 0
-
 1. There are a few differences between pointer variabels and arrays. 
 
    The most easy to spot difference is the difference of syntax with which
@@ -41,55 +39,33 @@
    // (or at least missing some detail).
    // Hint: a multi-dimensional array is stored consecutively in memory.
 
-4. Pointer arithmetic is getting the memory place a pointer points at, and 
-   adding and or substraction decimal values (or other memory places)
-   from that memory place
+4. Pointer arithmetic is adding or subtracting integers on places 
+   in memory, so that the pointer points to a different memory address.
+   
+   For example, for a pointer *ptr pointing to memory location z, lets say
+   that z is 0x8044. A real place in memory probably has more digits, but
+   this is just for the example. If you would now do 
+   cout << ptr + 1 << '\n'; the thing that would print is 0x8048, 
+   because the int takes up 4 bytes, the bytes 
+   0x8044, 0x8045, 0x8046 and 0x8047. 
+   So the memory place after that int would be 0x8048.
+   This could be usefull in situations, a good example of such a situation 
+   is when the pointer points to an array. You cannot use indexing on a 
+   pointer, so how would you go to for example the third item in the array? 
+   You cannot do *intArray[2] or something like that, so how
+   would you go there, you use pointer arithmetic. With pointer arithmetic 
+   you can do the following *(intArray +  2), now you are at the third item
+   in the intArray.
 
-4. Pointer arithmetic is adding or subtracting places in memory (iets over pointer syntax) to get answers on questions needed elsewhere.
-
-4. Pointer arithmetic describes defining a separate pointer by either adding
-   or subtracting from another pointer moves the memory location in which it
-   points. For example, for a pointer *ptr pointing to memory location x, the
-   pointer *(ptr + 1) points 1 step after the memory location of *ptr, which
-   would be x + 1. They also follow the same commutivity laws of addition, 
-   which means that *(ptr + 1) = *(1 + ptr). Additionally, another important 
-   element of pointer arithmetic is the indirection operators & and *. '*' 
-   removes a level of indirection by asking to reference the data of whatever 
-   it operates on. '&' Adds a level of indirection by asking to reference the
+   They also follow the same commutivity laws of addition and substraction 
+   (pointer difference), which means that *(ptr + 1) = *(1 + ptr). 
+   Additionally, another important element of pointer arithmetic is the 
+   indirection operators & and *. '*' removes a level of indirection by 
+   asking to reference the data of whatever it operates on. 
+   '&' Adds a level of indirection by asking to reference the
    address of the variable it operates on. & is treated as the mathematical 
    inverse of *, and using one right after another leads to them canceling
    out to the identity (i.e. *&var = &*var = var)
-   // ML: You can also do pointer difference.
-
-
-
-   // rewrite
-4. Pointer arithmetic describes defining a separate pointer by either adding
-   or subtracting from another pointer moves the memory location in which it
-   points. 
-   
-   
-   
-   For example, for a pointer *ptr pointing to memory location z, lets say that z is
-   0x8044. A real place in memory probably has more digits, but this is just for the example.
-   If you would now do cout << ptr + 1 << '\n';
-   The thing that would print is 0x8048, because the int takes up 4 bytes, the bytes
-   0x8044, 0x8045, 0x8046 and 0x8047. So the memory place after that int would be 0x8048.
-   Alright this is not very usefull unless you have a pointer 
-
-
-   pointer *(ptr + 1) points 1 step after the memory location of *ptr, which
-   would be x + 1. They also follow the same commutivity laws of addition, 
-   which means that *(ptr + 1) = *(1 + ptr). Additionally, another important 
-   element of pointer arithmetic is the indirection operators & and *. '*' 
-   removes a level of indirection by asking to reference the data of whatever 
-   it operates on. '&' Adds a level of indirection by asking to reference the
-   address of the variable it operates on. & is treated as the mathematical 
-   inverse of *, and using one right after another leads to them canceling
-   out to the identity (i.e. *&var = &*var = var)
-   // ML: You can also do pointer difference.
-
-
 
 
 
