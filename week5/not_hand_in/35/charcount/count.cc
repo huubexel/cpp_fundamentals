@@ -1,15 +1,15 @@
 #include "charcount.ih"
-// TODO comments
-size_t CharCount::count(istream &in)   // if no 'in' is given, this is cin
+
+size_t CharCount::count(istream &in)   // If no 'in' is given, this is cin
 {
-    size_t amounOfChars = 0;
+    size_t amounOfChars = 0;           // Total amount of characters in file
     char ch;
-    while ((ch = in.get()) != EOF)
+    while ((ch = in.get()) != EOF)     // Go through all the chars in a file
     {
-        switch (locate(ch))
-        {
-            case Action::APPEND:
-                append(ch);
+        switch (locate(ch))            // Locate(ch) returns an Action that
+        {                              // needs to be performed, this switch
+            case Action::APPEND:       // case will make sure that the
+                append(ch);            // corresponding Action get performed
             break;
 
             case Action::INSERT:
@@ -20,7 +20,7 @@ size_t CharCount::count(istream &in)   // if no 'in' is given, this is cin
                 inc();
             break;
         }
-        ++amounOfChars;
+        ++amounOfChars;                // Increment amount of characters by 1
     }
 
     return amounOfChars;               // Return amount of chars in the file
