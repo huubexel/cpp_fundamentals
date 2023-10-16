@@ -1,0 +1,14 @@
+#include "charcount.hh"
+#include "../showchar/showchar.hh"
+
+enum class Action
+{
+    APPEND,
+    INSERT,
+    INC
+};
+
+#include <string>
+#include <cctype>
+
+using namespace std;
