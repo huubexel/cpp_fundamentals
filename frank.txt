@@ -3,3 +3,6 @@ Vragen:
 2. Ff vragen in die structs in mekaar mogen. Wss wel.
 3. CharCount is een struct, maar d_charInfo is 'n CharCount data member waardoor je de integriteit vd data van CharCount niet meer kunt garanderen. Wat betekent dit?
    Dit is nog van de mail die Frank me heeft gestuurd
+4. Wij hadden Jurjen een mailtje gestuurd over de kwijtschelding van week 3 maar helaas geen respons gekregen. Moeten we wachten op een respons of moet er
+   een mailtje achteraan gestuurd woreden?
+5. Dat fiasco van week 5 aan Frank uitleggen.
