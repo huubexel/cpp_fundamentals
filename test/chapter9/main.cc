@@ -5,4 +5,5 @@ int main()
     standardNew();
     newArrays();
     rawMemory();
+    placementNew();
 }
