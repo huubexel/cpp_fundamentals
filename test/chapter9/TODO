@@ -1,0 +1,2 @@
+- The part about structs and using default values in combination with the new StructName{}(); Which normally
+  sets all things to 0, is not covered by the code in test yet.

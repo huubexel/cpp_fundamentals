@@ -1,5 +1,6 @@
 #include "raw_memory/raw_memory.hh"
 #include "standard_new/standard_new.hh"
+#include "new_arrays/new_arrays.hh"
 
 #include <iostream>
 #include <string>

@@ -3,5 +3,6 @@
 int main()    
 {
     standardNew();
+    newArrays();
     rawMemory();
 }
