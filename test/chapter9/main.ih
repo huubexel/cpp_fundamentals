@@ -1,0 +1,6 @@
+#include "raw_memory/raw_memory.hh"
+#include "standard_new/standard_new.hh"
+
+#include <string>
+
+using namespace std;
