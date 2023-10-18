@@ -2,5 +2,6 @@
 #define INCLUDED_NEW_ARRAYS
 
 void newArrays();
+void pointerToArrayOfPointers();
 
 #endif

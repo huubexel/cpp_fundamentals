@@ -46,4 +46,9 @@ void newArrays()
     // Delete[] does the following things: 1. it calls the destructor of all
     // the elements in the array (if the elements are not primitive types).
     // 2. It deallocated the memory occupied by the objects themselves.
+
+    // Once an array is allocated, you cannot easily make the array larger,
+    // there are two easy ways to do this, you would have to allocate a
+    // larger array and put all of the old items in the new array, or you would
+    // have to use raw memory. 
 }
