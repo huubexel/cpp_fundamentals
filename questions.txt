@@ -1,1 +1,4 @@
 Vragen:
+- Is there a difference between:
+  operator new(2 * sizeof(string)); and
+  operator new[](2 * sizeof(string));
