@@ -24,4 +24,11 @@ void standardNew()
     delete s2;
     delete s3;
     delete s4;
+
+    // Delete works as follows: 1. it calls the destructor of the object,
+    // (the destructor is responsible for deleting all the memory allocated
+    // to the object itself. If the pointers that are deleted are of primitive
+    // type, step 1 is skipped) 2. The bytes of memory containing the object
+    // are deallocated. (This is for objects that have additional memory
+    // besides their memory to exist, f.e. string is a good example).
 }

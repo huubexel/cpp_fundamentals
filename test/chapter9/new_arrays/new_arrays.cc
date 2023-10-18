@@ -42,4 +42,8 @@ void newArrays()
     delete[] intArr;
     delete[] stringArr;
     delete[] intArrWithZeros;
+
+    // Delete[] does the following things: 1. it calls the destructor of all
+    // the elements in the array (if the elements are not primitive types).
+    // 2. It deallocated the memory occupied by the objects themselves.
 }
